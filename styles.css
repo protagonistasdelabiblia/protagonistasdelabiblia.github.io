@@ -33,6 +33,7 @@ body {
     bottom: 25%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .content h1 {
@@ -47,8 +48,9 @@ body {
     padding: 0;
 }
 
-.navbar {
-    background-color: black;
+
+/* .navbar {
+    background-color: #fffafa;
     box-shadow: rgb(3 27 78 / 10%) 0px 2px 4px;
     justify-content: space-between;
     text-align: center;
@@ -57,7 +59,7 @@ body {
     margin: 0;
     padding: 0;
     position: fixed;
-    font-family: ;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar ul li {
@@ -65,12 +67,45 @@ body {
     list-style: none;
     display: inline-block;
     padding-bottom: .5%;
-    padding-right: 4%;
+    padding-right: 5%;
 }
 
 .navbar ul li a {
     text-decoration: none;
+    color: black;
+} */
+
+.buttons {
+    padding-top: 1.5%;
+}
+
+.buttons a {
+    padding-top: 1%;
+    align-items: center;
+    text-align: center;
+    padding-right: 1.5%;
+}
+
+button {
+    width: 16%;
+    height: 9vh;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f29d85 50%, transparent 50%);
+    border: 2px solid #f29d85;
+    border-radius: 4px;
+    font-size: 2vw;
+    padding: .5%;
+    cursor: pointer;
+    position: relative;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: 0.5s ease-out;
+}
+
+button:hover {
+    background-position: left;
+    font-size: 2.5vw;
 }
 
 
@@ -86,6 +121,11 @@ body {
     .navbar {
         height: 5vh;
     }
+    button {
+        width: ;
+        height: 3vh;
+    }
+    .navbar {}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -94,6 +134,10 @@ body {
     }
     .content {
         height: 35%;
+    }
+    button {
+        width: ;
+        height: 4vh;
     }
 }
 
@@ -104,6 +148,10 @@ body {
     .content {
         top: 35%;
     }
+    button {
+        width: ;
+        height: 3vh;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -112,5 +160,9 @@ body {
     }
     .content {
         top: 35%;
+    }
+    button {
+        width: 20%;
+        height: 3vh;
     }
 }
